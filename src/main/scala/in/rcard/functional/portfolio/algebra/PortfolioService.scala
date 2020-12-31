@@ -1,5 +1,7 @@
 package in.rcard.functional.portfolio.algebra
 
-trait PortfolioService[PortfolioId, Portfolio, F[_]] {
-  def open(id: PortfolioId): F[Portfolio]
+import cats.data.Reader
+
+trait PortfolioService[Portfolio, PortfolioId, F[_]] {
+  def open(id: String): Reader[PortfolioRepository[Portfolio, PortfolioId, F], F[Portfolio]]
 }
