@@ -14,3 +14,4 @@ The project uses the [Cats](https://typelevel.org/cats/) library by Typelevel. T
 in the code are (updating):
 
 * [`Validated`](https://typelevel.org/cats/datatypes/validated.html)
+* [`Reader`](https://typelevel.org/cats/datatypes/kleisli.html)
